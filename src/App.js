@@ -1,9 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import ScrollTop from './ScrollTop';
 function App() {
   return (
-   <div></div>
+    <div>
+      <ScrollTop/>
+    </div>
+
   );
 }
 
