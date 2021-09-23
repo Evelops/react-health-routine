@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 class Days extends Component{
     state={
         date:new Date()
@@ -8,7 +7,7 @@ class Days extends Component{
     render(){
         const {date}=this.state;
         return(
-            <p>{date.getDay()===0
+            <h5> 오늘은 {date.getDay()===0
                 ? "일요일"
                 :date.getDay()===1
                 ? "월요일"
@@ -21,7 +20,8 @@ class Days extends Component{
                 :date.getDay()===5
                 ? "금요일"
                 :"토요일"}
-                </p>
+                입니다!
+                </h5>
         );
     }
 

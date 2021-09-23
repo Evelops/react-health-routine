@@ -5,8 +5,7 @@ import "./Header.css";
 const Header=()=> {
         return(
             <div class="header">
-                <h1>오늘의 헬스</h1>
-                <p>오늘은 {<Days/>} 임으로 {} 운동을 하러 갑시다</p>
+                <h1>오늘은 {<Days/>} 임으로 {} 운동을 하러 갑시다</h1>
             </div>
             
         );
