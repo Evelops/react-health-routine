@@ -16,6 +16,11 @@ export default function App() {
         <Typography variant="h2" component="div" align="center" color="text.primary">
               <Days/>
             </Typography>
+            <Typography variant="h5" component="p" align="center" color="text.secondary">
+            Quickly build an effective pricing table for your potential customers with
+          this layout. It&apos;s built with default MUI components with little
+          customization.
+            </Typography>
         </Box>
       </Container>
   </div>
