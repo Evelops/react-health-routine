@@ -8,7 +8,6 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Fab from '@mui/material/Fab';
-
 import Zoom from '@mui/material/Zoom';
 
 function ScrollTop(props) {
@@ -36,7 +35,7 @@ function ScrollTop(props) {
   };
 
   return (
-    <Zoom in={trigger}>
+    <Zoom in={trigger}> 
       <Box
         onClick={handleClick}
         role="presentation"
@@ -64,7 +63,7 @@ export default function BackToTop(props) {
       <AppBar>
         <Toolbar>
           <Typography variant="h6" component="div">
-            Scroll to see button
+            건강지킴이
           </Typography>
         </Toolbar>
       </AppBar>
