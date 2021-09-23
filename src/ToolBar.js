@@ -5,11 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import CssBaseline from '@mui/material/CssBaseline';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
 import Slide from '@mui/material/Slide';
-import Days from './Component/Days';
-import Routine from './Component/Routine';
 function HideOnScroll(props) {
   const { children, window } = props;
   // Note that you normally won't need to set the window ref as useScrollTrigger
@@ -34,8 +30,7 @@ HideOnScroll.propTypes = {
    */
   window: PropTypes.func,
 };
-
-export default function HideAppBar(props) {
+export default function ToolBar(props) {
   return (
     <React.Fragment>
       <CssBaseline />
@@ -49,16 +44,7 @@ export default function HideAppBar(props) {
         </AppBar>
       </HideOnScroll>
       <Toolbar />
-      <Container>
-        <Box sx={{ my: 2 }}>
-        <Typography variant="h2" component="div" align="center" color="text.primary">
-              <Days/>
-            </Typography>
-            <Typography variant="h5" component="p" align="center" color="text.secondary">
-              <Routine/>
-            </Typography>
-        </Box>
-      </Container>
+    
     </React.Fragment>
   );
 }
