@@ -54,8 +54,7 @@ class Wise_Says extends Component(){
         })
     }
     render()
-    {
-        const {quotes} =this.state;
+    {   
         return(
             <div>{this.handleRandom}</div>
         );

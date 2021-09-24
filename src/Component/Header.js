@@ -1,11 +1,12 @@
 import React from 'react';
 import Days from './Days';
-import "./Header.css";
+
 
 const Header=()=> {
         return(
             <div class="header">
                 <h1>오늘은 {<Days/>} 임으로 {} 운동을 하러 갑시다</h1>
+                
             </div>
             
         );

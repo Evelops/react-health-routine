@@ -5,8 +5,40 @@ import ToolBar from './ToolBar';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Days from './Component/Days';
-import Routine from './Routine';
 import Grid from '@mui/material/Grid';
+import FeaturedPost from './FeaturedPost';
+
+const featuredPosts =[
+  {
+    title: '당기기 운동',
+    description:
+      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+    image: 'https://source.unsplash.com/random',
+    imageLabel: 'Image Text',
+  },
+  {
+    title: '유산소 운동 ',
+    description:
+      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+    image: 'https://source.unsplash.com/random',
+    imageLabel: 'Image Text',
+  },
+  {
+    title: '미는 운동',
+    description:
+      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+    image: 'https://source.unsplash.com/random',
+    imageLabel: 'Image Text',
+  },
+  {
+    title: '하체 운동',
+    description:
+      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+    image: 'https://source.unsplash.com/random',
+    imageLabel: 'Image Text',
+  },
+];
+
 export default function App() {
   return(
   <div>
@@ -20,23 +52,17 @@ export default function App() {
             <Typography variant="h5" component="p" align="center" color="text.secondary">
             Quickly build an effective pricing table for your potential customers with
           this layout. It&apos;s built with default MUI components with little
-          customization.
+          customization. Quickly build an effective pricing table for your potential customers with
+          this layout. It&apos; Quickly build an effective pricing table for your potential customers with
+          this layout. It&apos; Quickly build an effective pricing table for your potential customers with
+          this layout. It&apos;
             </Typography>
         </Box>
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-  <Grid item xs={6}>
-  <Routine/>
-  </Grid>
-  <Grid item xs={6}>
-   <Routine/>
-  </Grid>
-  <Grid item xs={6}>
-   <Routine/>
-  </Grid>
-  <Grid item xs={6}>
-   <Routine/>
-  </Grid>
-</Grid>
+        <Grid container spacing={4}>
+            {featuredPosts.map((post) => (
+              <FeaturedPost key={post.title} post={post} />
+            ))}
+          </Grid>
 
         
       </Container>
