@@ -8,42 +8,35 @@ import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 
+
+       
+    
+ 
 const steps = [
   {
-    label: 'Select campaign settings',
-    description: `For each ad campaign that you create, you can control how much
-              you're willing to spend on clicks and conversions, which networks
-              and geographical locations you want your ads to show on, and more.`,
+    label: '충분한 숙면 ',
+    description: `충분한 숙면을 취했나요? 운동하기 전 6-8시간 정도의 숙면이 필요합니다. `,
   },
   {
-    label: 'Create an ad group',
+    label: '간단한 식사',
     description:
-      'An ad group contains one or more ads which target a shared set of keywords.',
+      '운동진행 30분전 간단한 식사를 통해서 몸의 신진대사를 올려야 합니다. ',
   },
   {
-    label: 'Create an ad',
-    description: `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`,
+    label: '충분한 시간 ',
+    description: `운동하는 시간이 여유로운지 체크해야합니다. 운동을 함으로 다른 일에 지장이 있는지 확인하세요.`,
   },
   {
-    label: 'Create an ad',
-    description: `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`,
-  },
-  {
-    label: 'Create an ad',
-    description: `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`,
-  },    
+    label: '운동 준비물',
+    description: `헬스를 가기전 필요한 구성품을 모두 챙겼는지 확인합니다.(커피 or 부스터, 스트랩, 붕대, 헬스화)`,
+  }, 
 ];
 
+
 export default function VerticalLinearStepper() {
+
+  
+
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = () => {
@@ -57,6 +50,8 @@ export default function VerticalLinearStepper() {
   const handleReset = () => {
     setActiveStep(0);
   };
+ 
+
 
   return (
     <Box sx={{ maxWidth: 1200 }}>
@@ -82,7 +77,7 @@ export default function VerticalLinearStepper() {
                     sx={{ mt: 1, mr: 1 }}
                   >
                     {index === steps.length - 1 ? 'Finish' : 'Continue'}
-                  </Button>
+                 </Button>
                   <Button
                     disabled={index === 0}
                     onClick={handleBack}
@@ -100,7 +95,7 @@ export default function VerticalLinearStepper() {
         <Paper square elevation={0} sx={{ p: 3 }}>
           <Typography>All steps completed - you&apos;re finished</Typography>
           <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
-            Reset
+            reset
           </Button>
         </Paper>
       )}

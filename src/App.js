@@ -8,6 +8,7 @@ import Days from './Component/Days';
 import Step from './Component/Step';
 import Grid from '@mui/material/Grid';
 import FeaturedPost from './FeaturedPost';
+import MyApp from './MyApp';
 
 const featuredPosts =[
   {
@@ -58,6 +59,7 @@ export default function App() {
           this layout. It&apos; Quickly build an effective pricing table for your potential customers with
           this layout. It&apos;
             </Typography>
+
             <Typography variant="h3" component="p" align="center">
               <Step/>
             </Typography>
@@ -67,6 +69,7 @@ export default function App() {
               <FeaturedPost key={post.title} post={post} />
             ))}
           </Grid>
+          <MyApp/>
 
         
       </Container>

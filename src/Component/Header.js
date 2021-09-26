@@ -2,9 +2,6 @@ import React from 'react';
 import Days from './Days';
 
 
-const 
-
-
 const Header=()=> {
         return(
             <div class="header">
