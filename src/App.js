@@ -8,7 +8,7 @@ import Days from './Component/Days';
 import Step from './Component/Step';
 import Grid from '@mui/material/Grid';
 import FeaturedPost from './FeaturedPost';
-
+import Footer from './Footer';
 
 const featuredPosts =[
   {
@@ -69,9 +69,7 @@ export default function App() {
               <FeaturedPost key={post.title} post={post} />
             ))}
           </Grid>
-        
-
-        
+          <Footer/>
       </Container>
   </div>
   );
