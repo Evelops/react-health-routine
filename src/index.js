@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-
+import Root from './client/Root';
+export {default as Home} from './pages/Home.js';
+export {default as AboutExercise} from './pages/AboutExercise.js';
 ReactDOM.render(
-    <App />,
+    <Root/>,
   document.getElementById('root')
-);
+); 

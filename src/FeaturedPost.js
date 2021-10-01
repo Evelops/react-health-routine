@@ -24,8 +24,8 @@ function FeaturedPost(props) {
             <Typography variant="subtitle1" paragraph>
               {post.description}
             </Typography>
-            <Typography variant="subtitle1" color="primary">
-              Detail
+            <Typography component="button" variant="subtitle1" color="primary">
+              detail{post.detail}
             </Typography>
           </CardContent>
           <CardMedia
